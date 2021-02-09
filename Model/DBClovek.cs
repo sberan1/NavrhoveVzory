@@ -6,5 +6,6 @@ namespace NavrhoveVzoryUkol.Model
 {
     class DBClovek
     {
+
     }
 }
