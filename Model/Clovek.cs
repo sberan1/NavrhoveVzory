@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NavrhoveVzoryUkol.Model;
 
 namespace NavrhoveVzoryUkol.Model
 {
-    class Clovek
+    public class Clovek
     {
         NameValidator nameValidator = new NameValidator();
         AgeValidator ageValidator = new AgeValidator();
