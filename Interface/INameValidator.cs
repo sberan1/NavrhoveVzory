@@ -4,7 +4,8 @@ using System.Text;
 
 namespace NavrhoveVzoryUkol.Interface
 {
-    class INameValidators
+    interface INameValidator
     {
+        bool IsValid(string jmeno);
     }
 }

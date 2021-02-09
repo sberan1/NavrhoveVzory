@@ -4,7 +4,8 @@ using System.Text;
 
 namespace NavrhoveVzoryUkol.Interface
 {
-    class IDateValidator
+    interface IDateValidator
     {
+        bool IsValid(DateTime date);
     }
 }

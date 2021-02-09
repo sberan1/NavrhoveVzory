@@ -4,7 +4,8 @@ using System.Text;
 
 namespace NavrhoveVzoryUkol.Interface
 {
-    class IRodneCisloValidator
+    interface IRodneCisloValidator
     {
+        bool IsValid(string hodnota, int year);
     }
 }
