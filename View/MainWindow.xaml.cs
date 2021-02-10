@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NavrhoveVzoryUkol.Model;
+using NavrhoveVzoryUkol.ViewModel;
 
 namespace NavrhoveVzoryUkol
 {
@@ -20,6 +22,7 @@ namespace NavrhoveVzoryUkol
     /// </summary>
     public partial class MainWindow : Window
     {
+        ClovekUlozeni ulozit = new ClovekUlozeni();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,6 +30,18 @@ namespace NavrhoveVzoryUkol
 
         private void Tlacitko_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                Clovek clovek = new Clovek(JmenoField.ToString(), PrijmeniField.ToString(), Convert.ToDateTime(RokNarozeniField), RodneCisloField.ToString());
+                ulozit.ulozitDoDB(clovek);
+            }
+            catch
+            {
+                MessageBox.Show("jedno ze zadanych poli neni spravne");
+            }
+
+
+
 
         }
     }

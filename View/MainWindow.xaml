@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="350">
     <StackPanel>
-        <Label Content="Jmeno" HorizontalContentAlignment="Center"></Label>
+        <Label Content="Jmeno" HorizontalContentAlignment="Center" Margin="5 0"></Label>
         <TextBox Margin="4 5" x:Name="JmenoField"></TextBox>
-        <Label Content="Prijmeni" HorizontalContentAlignment="Center"></Label>
+        <Label Content="Prijmeni" HorizontalContentAlignment="Center" Margin="5 0"></Label>
         <TextBox Margin="4 5" x:Name="PrijmeniField"></TextBox>
-        <Label Content="Rok Narozeni" HorizontalContentAlignment="Center"></Label>
+        <Label Content="Rok Narozeni" HorizontalContentAlignment="Center" Margin="5 0"></Label>
         <TextBox Margin="4 5" x:Name="RokNarozeniField"></TextBox>
-        <Label Content="Rodne Cislo bez lomitka" HorizontalContentAlignment="Center"></Label>
+        <Label Content="Rodne Cislo" HorizontalContentAlignment="Center" Margin="5 0"></Label>
         <TextBox Margin="4 5" x:Name="RodneCisloField" ></TextBox>
         <Button Content="Vlozit do DB" Margin="4 5" x:Name="Tlacitko" Click="Tlacitko_Click"></Button>
     </StackPanel>
