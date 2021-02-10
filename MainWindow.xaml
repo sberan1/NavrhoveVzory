@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NavrhoveVzoryUkol"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="450" Width="350">
+    <StackPanel>
+        <Label Content="Jmeno" HorizontalContentAlignment="Center"></Label>
+        <TextBox Margin="4 5" x:Name="JmenoField"></TextBox>
+        <Label Content="Prijmeni" HorizontalContentAlignment="Center"></Label>
+        <TextBox Margin="4 5" x:Name="PrijmeniField"></TextBox>
+        <Label Content="Rok Narozeni" HorizontalContentAlignment="Center"></Label>
+        <TextBox Margin="4 5" x:Name="RokNarozeniField"></TextBox>
+        <Label Content="Rodne Cislo bez lomitka" HorizontalContentAlignment="Center"></Label>
+        <TextBox Margin="4 5" x:Name="RodneCisloField" ></TextBox>
+        <Button Content="Vlozit do DB" Margin="4 5" x:Name="Tlacitko" Click="Tlacitko_Click"></Button>
+    </StackPanel>
 </Window>

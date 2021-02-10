@@ -24,5 +24,10 @@ namespace NavrhoveVzoryUkol
         {
             InitializeComponent();
         }
+
+        private void Tlacitko_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
