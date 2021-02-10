@@ -29,8 +29,6 @@ namespace NavrhoveVzoryUkol.ViewModel
             while (funguje = true)
             {
                 string klic = RandomString(7);
-
-
                 if (!db.dbClovek.ContainsKey(klic))
                 {
                     db.dbClovek.Add(klic, Clovek);
